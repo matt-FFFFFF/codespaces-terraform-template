@@ -1,0 +1,28 @@
+{
+    "name": "Terraform devcontainer",
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [],
+    "extensions": [
+        "hashicorp.terraform",
+        "coenraads.bracket-pair-colorizer-2"
+    ],
+    "settings": {
+        "editor.matchBrackets": "never",
+        "bracket-pair-colorizer-2.scopeLineCSS": [
+            "borderStyle : solid",
+            "borderWidth : 2px",
+            "borderColor : {color}",
+            "opacity: 0.5"
+        ],
+        "bracket-pair-colorizer-2.colors": [
+            "Silver",
+            "Gold",
+            "Orchid",
+            "LightSkyBlue"
+        ],
+        "bracket-pair-colorizer-2.showVerticalScopeLine": true,
+        "bracket-pair-colorizer-2.showBracketsInGutter": true,
+        "bracket-pair-colorizer-2.highlightActiveScope": true,
+        "terminal.integrated.shell.linux": "/usr/bin/zsh"
+    }
+}
