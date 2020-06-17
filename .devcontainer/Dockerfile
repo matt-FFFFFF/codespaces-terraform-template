@@ -54,3 +54,8 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && unzip ~/terraform_${TF_VER}_linux_amd64.zip -d /usr/local/bin \
     && unzip ~/tflint_linux_amd64.zip -d /usr/local/bin \
     && rm ~/tflint_linux_amd64.zip ~/terraform_${TF_VER}_linux_amd64.zip
+
+USER $USERNAME
+
+RUN echo "alias t='noglob terraform'" | tee -a ~/.zshrc \
+    && echo "alias terraform='noglob terraform'" | tee -a ~/.zshrc \
