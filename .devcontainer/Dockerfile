@@ -58,4 +58,4 @@ RUN groupadd --gid $USER_GID $USERNAME \
 USER $USERNAME
 
 RUN echo "alias t='noglob terraform'" | tee -a ~/.zshrc \
-    && echo "alias terraform='noglob terraform'" | tee -a ~/.zshrc \
+    && echo "alias terraform='noglob terraform'" | tee -a ~/.zshrc
