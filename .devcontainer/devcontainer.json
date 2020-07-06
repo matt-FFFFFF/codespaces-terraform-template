@@ -23,6 +23,14 @@
         "bracket-pair-colorizer-2.showVerticalScopeLine": true,
         "bracket-pair-colorizer-2.showBracketsInGutter": true,
         "bracket-pair-colorizer-2.highlightActiveScope": true,
-        "terminal.integrated.shell.linux": "/usr/bin/zsh"
+        "terminal.integrated.shell.linux": "/usr/bin/zsh",
+        "terraform.languageServer": {
+            "external": true,
+            "args": [
+                "serve"
+            ],
+            "maxNumberOfProblems": 100,
+            "trace.server": "off"
+        }
     }
 }
