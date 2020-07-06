@@ -21,7 +21,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
     #
     # Install required packages (and zsh)
     #
-    && apt-get install -y git \
+    && apt-get -y install git \
                           curl \
                           wget \
                           bash \
